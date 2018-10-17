@@ -110,14 +110,17 @@ public class Colosseum {
             System.out.println("Select from the following Pokemon types:\n1 - Electric Pokemon\n2 - Fire Pokemon\n3 - Water Pokemon\n ");
             int pokeTypeInput = myScan.nextInt();
             if (pokeTypeInput == 1) {
-//                tempPokemon.pokeType = Pokemon.PokemonType.ELECTRIC;
+
                 tempPokemon = new ElectricPokemon();
+                tempPokemon.pokeType = Pokemon.PokemonType.ELECTRIC;
                 break;
             } else if (pokeTypeInput == 2) {
                 tempPokemon = new FirePokemon();
+                tempPokemon.pokeType = Pokemon.PokemonType.FIRE;
                 break;
             } else if (pokeTypeInput == 3) {
                 tempPokemon = new WaterPokemon();
+                tempPokemon.pokeType = Pokemon.PokemonType.WATER;
                 break;
             } else {
                 input = true;
